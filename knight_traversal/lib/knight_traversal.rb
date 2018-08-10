@@ -1,8 +1,8 @@
-require_relative "knight_traversal/version"
-require_relative "knight_traversal/knight_traversal_tree"
-require_relative "knight_traversal/chess_board"
-require_relative "knight_traversal/chess_square"
-
 module KnightTraversal
-  # Your code goes here...
+  class KnightCLI
+    def self.get_path(start, finish, *bad_squares)
+      tree = KnightTree.new (bad_squares)
+      tree.get_path(start, finish)
+    end
+  end
 end

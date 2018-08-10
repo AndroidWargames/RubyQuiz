@@ -17,6 +17,9 @@ Gem::Specification.new do |spec|
 #  spec.description   = %q{TODO: Write a longer description or delete this line.}
   spec.homepage      = "https://github.com/AndroidWargames/RubyQuiz"
   spec.license       = "MIT"
+  spec.add_development_dependency "cucumber"
+  spec.add_development_dependency "aruba"
+  spec.add_dependency "thor"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
