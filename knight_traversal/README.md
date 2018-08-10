@@ -1,38 +1,51 @@
 # KnightTraversal
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/knight_traversal`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Description
 
-TODO: Delete this and the text above, and describe your gem
+This gem finds a shortest path travelled by a knight between two squares on a chessboard. It also accepts additional arguments to make certain squares off-limits. It implements a basic breadth-first search algorithm.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'knight_traversal'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+you can download the package file and install it from your local directory with the following:
 
     $ gem install knight_traversal
 
 ## Usage
 
-TODO: Write usage instructions here
+simply run this command
 
-## Development
+    $ knight_traversal get_path <args>
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+and it will return a list of square names indicating the path. If there is no valid path, it will return nothing.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### Arguments
+
+First argument: the square which the path will start from
+Second argument: the square the knight will try to reach
+Additional arguments: squares that are prohibited
+
+### Formatting
+
+all arguments should be formatted of a letter a-h followed by a number 1-8
+
+examples: 'a3' 'h5' 'e1' 'c8'
+
+invalid examples: 'a0' 'f1000' 'ff' '90' 'a' '3' ''
+
+### Examples
+
+    $ knight_traversal get_path a1 b1
+    > ["a1", "c2", "a3", "b1"]
+
+    $ knight_traversal get_path a1 b1 c2 d2
+    > ["a1", "b3", "d4", "b5", "a3", "b1"]
+
+    $ knight_traversal get_path a1 d4 c2 b3
+    > 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/knight_traversal.
+Please don't contribute. This was simply done as an exercise and has no real purpose for now, probably ever.
 
 ## License
 
