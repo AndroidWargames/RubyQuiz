@@ -1,24 +1,29 @@
-*** Knight Traversal Help ***
 
-`knight_traversal get_path` will print a shortest path between two
-chessboard squares as traversed by a knight
 
-Chess squares are notated as a letter followed by a number
-e.g. 'a1' 'b5' 'h8'
+    ** Knight Traversal Help ***
 
-The first two parameters specify the starting square and desired end square
+      `knight_traversal get_path` will print a shortest path between two
+      chessboard squares as traversed by a knight
 
-You can optionally specify additional parameters, which specify squares
-that may not be part of the path
+      Chess squares are notated as a letter followed by a number
+      e.g. 'a1' 'b5' 'h8'
 
-If there is no valid path, a blank string will be returned
+      The first two parameters specify the starting square and desired end square
 
-EXAMPLES: 
+      You can optionally specify additional parameters, which specify squares
+      that may not be part of the path
 
-> $ knight_traversal get_path a1 b1
-> ["a1", "c2", "a3", "b1"]
+      If there is no valid path, a blank string will be returned
 
-> $ knight_traversal get_path a1 b1 c2 d2
-> ["a1", "b3", "d4", "b5", "a3", "b1"]
 
-> $ knight_traversal get_path a1 d4 c2 b3
+      EXAMPLES: 
+
+      > $ knight_traversal get_path a1 b1
+      > ["a1", "c2", "a3", "b1"]
+
+      > $ knight_traversal get_path a1 b1 c2 d2
+      > ["a1", "b3", "d4", "b5", "a3", "b1"]
+
+      > $ knight_traversal get_path a1 d4 c2 b3
+
+
