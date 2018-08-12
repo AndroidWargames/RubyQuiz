@@ -34,13 +34,13 @@ invalid examples: 'a0' 'f1000' 'ff' '90' 'a' '3' ''
 
 ### Examples
 
-    $ knight_traversal get_path a1 b1
+    > $ knight_traversal get_path a1 b1
     > ["a1", "c2", "a3", "b1"]
 
-    $ knight_traversal get_path a1 b1 c2 d2
+    > $ knight_traversal get_path a1 b1 c2 d2
     > ["a1", "b3", "d4", "b5", "a3", "b1"]
 
-    $ knight_traversal get_path a1 d4 c2 b3
+    > $ knight_traversal get_path a1 d4 c2 b3
     > 
 
 ## Contributing

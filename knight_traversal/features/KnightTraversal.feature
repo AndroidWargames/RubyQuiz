@@ -13,3 +13,11 @@ Feature: Correct Traversal
   Scenario: no path
     When I run `knight_traversal get_path "a1" "d4" "b3" "c2"`
     Then the output should contain ""
+
+  Scenario: implicit help
+    When I run `knight_traversal`
+    Then the output should contain "*** Knight Traversal Help ***"
+
+  Scenario: explicit help
+    When I run `knight_traversal help`
+    Then the output should contain "*** Knight Traversal Help ***"
