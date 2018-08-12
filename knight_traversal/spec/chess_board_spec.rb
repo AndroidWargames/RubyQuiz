@@ -39,4 +39,11 @@ RSpec.describe "ChessBoard" do
       expect(actual_neighbors).to eql(b3_neighbors)
     end
   end
+
+  describe '.get_coordinates' do
+    it 'should get coordinates' do
+      expect(ChessBoard.get_coordinates('b3')).to eql([1, 2])
+      expect(ChessBoard.get_coordinates('h8')).to eql([7, 7])
+    end
+  end
 end

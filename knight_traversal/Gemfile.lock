@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    knight_traversal (0.2.0)
+    knight_traversal (0.4.0)
       thor
 
 GEM

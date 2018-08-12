@@ -6,6 +6,7 @@ require "knight_traversal/knight_traversal_tree"
 require "knight_traversal/chess_square"
 require "knight_traversal/chess_board"
 require "rspec"
+require "simplecov"
 
 Gem::Specification.new do |spec|
   spec.name          = "knight_traversal"

@@ -25,6 +25,16 @@ RSpec.describe "KnightTree" do
     end
   end
 
+  describe 'reset_distances' do
+    it 'should return all square distances to 100' do
+      knight_tree = KnightTree.new(%w[a1 h3])
+      knight_tree.reset_distances
+      knight_tree.squares.each do |square|
+        expect(square.distance).to eql(100)
+      end
+    end
+  end
+
   describe '.get_name' do
     it 'should return name of index' do
       knight_tree = KnightTree.new(%w[a1 h3])
